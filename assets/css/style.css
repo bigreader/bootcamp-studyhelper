@@ -1,5 +1,5 @@
 #jumbotron  {
-    max-height:50px;
+    max-height:40px;
     text-align: center;
      width:960px;
     margin:0 auto;
@@ -11,7 +11,23 @@
 .content{
   max-width: 960px;
   height:550px;;
-  border: 10px solid #cccc;
+  border: 50px solid #cccc;
   margin: 0 auto;
 }
 
+#timer{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 30px;
+}
+
+
+#start, #stop, #reset{
+  margin-top: 10px;
+   width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
