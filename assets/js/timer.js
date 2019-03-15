@@ -21,6 +21,7 @@ var stopwatch = {
 	},
 
 	interval: function(callback) {
+		callback();
 		callbackInterval = setInterval(callback, 500);
 	},
 
