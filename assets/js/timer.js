@@ -1,5 +1,3 @@
-var stopwatchStart;
-
 function formatTime(sec) {
 	if (sec > 3600) {
 		return (Math.floor(sec/3600) + ":" + Math.floor(sec%3600/60).padStart(2, "0") + ":" + (sec%60).padStart(2, "0"));
@@ -10,15 +8,23 @@ function formatTime(sec) {
 	}
 }
 
-
 var stopwatch = {
-	running: function() {
-		return false;
-	},
+	callbackInterval: null;
 
 	time: function() {
-		return 0;
+		var startTime = localStorage.getItem("stopwatch");
+		return Math.floor((Date.now()-startTime)/1000);
+	},
+
+	reset: function() {
+		localStorage.setItem("stopwatch", Date.now());
+	},
+
+	interval: function(callback) {
+		callbackInterval = setInterval(callback, 100);
+	},
+
+	clearInterval: function() {
+		clearInterval(callbackInterval);
 	}
-
-
 }
