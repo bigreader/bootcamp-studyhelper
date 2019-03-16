@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<h1 id="display">0:00</h1>
+
+	<button onclick="stopwatch.clearInterval()">Stop</button>
+
+	<script src="assets/js/timer.js"></script>
+	<script type="text/javascript">
+		stopwatch.reset();
+		stopwatch.interval(function() {
+			document.getElementById("display").innerText = formatTime(stopwatch.time());
+		});
+	</script>
+
+</body>
+</html>
