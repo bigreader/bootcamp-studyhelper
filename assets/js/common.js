@@ -9,3 +9,5 @@ var config = {
 firebase.initializeApp(config);
 
 database = firebase.database();
+
+console.log("Hi, Brian!");
