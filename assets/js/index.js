@@ -32,7 +32,7 @@ $(document).ready(function() {
 		item.text(session.date + ' - ');
 		item.append($('<b>').text(formatTime(session.duration)));
 
-		$('#session-list').append(item);
+		$('#timeLog').append(item);
 
 
 	});
