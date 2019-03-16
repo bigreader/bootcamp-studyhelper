@@ -43,9 +43,8 @@ $(document).ready(function() {
 		var session = snap.val();
 
 		var item = $('<li>');
-		item.text(session.date + ' - ');
 		item.append($('<b>').text(formatTime(session.duration)));
-		item.attr('id', 'session-' + session.date);
+
 
 		$('#timeLog').prepend(item);
 	});
