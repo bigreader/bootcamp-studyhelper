@@ -1,7 +1,6 @@
 body {
   background-color: white;
 }
-btn btn-outline-secondary
 .navbar-brand {
   font-weight: lighter;
 }
@@ -51,7 +50,7 @@ aside > p {
   .content{
     max-width: 960px;
     height:550px;;
-    border: 10px solid #cccc;
+    border: 5px solid #cccc;
     margin: 0 auto;
   }
 
@@ -68,6 +67,36 @@ aside > p {
   text-align:center;
 }
 
+#start {
+  margin-top: 25px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#reset{      
+  margin-top: 25px;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+
+}
+
+#stop {
+  margin-top: 25px;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.col-sm{
+   margin-left: auto;
+  margin-right: auto;
+
+}
 
 footer {
   position: fixed;
@@ -77,20 +106,4 @@ footer {
   background-color: white;
   color: black;
   text-align: center;
-}
-#timer{
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding: 30px;
-}
-
-
-#start, #stop, #reset{
-  margin-top: 10px;
-   width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
