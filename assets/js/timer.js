@@ -12,8 +12,11 @@ var stopwatch = {
 	callbackInterval: null,
 
 	time: function() {
-		var startTime = localStorage.getItem("stopwatch");
-		return Math.floor((Date.now()-startTime)/1000);
+		return Math.floor((Date.now()-this.startTime())/1000);
+	},
+
+	startTime: function() {
+		return localStorage.getItem("stopwatch");
 	},
 
 	reset: function() {
