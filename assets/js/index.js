@@ -7,6 +7,11 @@ $(document).ready(function() {
 		});
 	});
 
+	$('#reset').on('click', function() {
+		stopwatch.clearInterval();
+		$('#timer').text(formatTime(0));
+	});
+
 	$('#stop').on('click', function() {
 		stopwatch.clearInterval();
 		var time = stopwatch.time();
@@ -20,7 +25,7 @@ $(document).ready(function() {
 
 
 
-	database.ref('studySessions').on('child_added', function(snap) {
+	database.ref('studySessions').orderByChild('date').on('child_added', function(snap) {
 		var session = snap.val();
 
 		var item = $('<li>');
