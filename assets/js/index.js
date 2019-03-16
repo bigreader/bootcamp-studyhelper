@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-	$('#SESSION_START_BUTTON').on('click', function() {
+	$('#start').on('click', function() {
 		stopwatch.reset();
 		stopwatch.interval(function() {
-			$('#SESSION_TIMER_DISPLAY').text(formatTime(stopwatch.time()));
+			$('#timer').text(formatTime(stopwatch.time()));
 		});
 	});
 
-	$('#SESSION_STOP_BUTTON').on('click', function() {
+	$('#stop').on('click', function() {
 		stopwatch.clearInterval();
 		var time = stopwatch.time();
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		item.text(session.date + ' - ');
 		item.append($('<b>').text(formatTime(session.duration)));
 
-		$('#STUDY_SESSION_LIST').append(item);
+		$('#session-list').append(item);
 
 
 	});
