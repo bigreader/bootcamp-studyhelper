@@ -9,6 +9,10 @@ body {
   color:black;
 }
 
+.collapse .navbar-collapse{
+  position:center;
+}
+
 .nav-link {
   color:black;
 }
@@ -107,3 +111,4 @@ footer {
   color: black;
   text-align: center;
 }
+
