@@ -10,9 +10,10 @@ $(document).ready(function() {
 	$('#stop').on('click', function() {
 		stopwatch.clearInterval();
 		var time = stopwatch.time();
+		// save the time right now, so firebase lag doesn't matter
 
 		database.ref('studySessions').push({
-			date: Date.now(),
+			date: stopwatch.startTime(),
 			duration: time
 		});
 	});
