@@ -6,65 +6,75 @@
     <title>Focus ME</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Caveat|Comfortaa|Exo|Gloria+Hallelujah|Indie+Flower|Kalam|News+Cycle|Poiret+One|Shadows+Into+Light|Thasadith" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">FocusMe</a>
+          <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tips</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nutrition</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dashboard
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Reports</a>
+                          <a class="dropdown-item" href="#">Sessions</a>
+                          <a class="dropdown-item" href="#">Timers</a>
+                        </div>
+                      </li>
+              </ul>
+        </div>
+      </nav>
     <div class="jumbotron jumbotron-fluid" id="jumbotron">
-        <div class="container">
-            <h1 class="display-8">Focus me</h1>
-        </div>
+        <aside>
+            <p class="lead">A helpful studying assistant that tracks your study time, 
+                remembers your next exam’s details, and provides resources and inspirational 
+                quotes to help you work.</p>
+         </aside>
+        <h1 class="display-8">FocusMe</h1>
+        <hr class="my-4">
+
+         <br>
+         <br>
+         <br>
+         <button type="button" class="btn btn-outline-secondary">Get Started</button>
     </div>
-    <ul class="nav justify-content-center">
-        <nav class="navbar navbar-light bg-light">
-            <div id="session">
-                <button type="button">Session</button>
+        <div class="container-fluid">
+                
+                <h1 class="display-8">Timer</h1>
+            <div class="content"> 
+              <div class="row">
+                  <div class="col-lg">
+                <button type="button" class="btn btn-outline-secondary" id="timer">Timer</button>
+              </div>
             </div>
-            <div class="Study">
-                <button type="button">Study Now</button>
-            </div>
-
-            <form class="form-inline">
-
-                <input class="form-control mr-sm-2" type="search" placeholder="Food places" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-
-            </form>
-        </nav>
-    </ul>
-    <div class="content">
-        <div class="row">
-            <div class="col-lg">
-                <button type="button" class="btn btn-dark" id="timer">Timer</button>
-            </div>
+            <div class="row" id="">
+                <div class="col-sm">
+                <button type="button" class="btn btn-outline-secondary" id="start">Start</button>
+              </div>
+              <div class="col-sm">
+                <button type="button" class="btn btn-outline-secondary" id= "stop">Stop</button>
+                  </div>
+               
+            </div>       
         </div>
-        <div class="row" id="">
-            <div class="col-sm">
-                <button type="button" class="btn btn-primary" id="start">Start</button>
-            </div>
-            <div class="col-sm">
-                <button type="button" class="btn btn-danger" id="stop">Stop</button>
-            </div>
-        </div>
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        <p>Copyright © 2019 </p>
+    </footer>
 
 
 </body>

@@ -1,20 +1,83 @@
-#jumbotron  {
-    max-height:40px;
-    text-align: center;
-     width:960px;
-    margin:0 auto;
-    text-align: center;
-    line-height: 50px;
-   
-  }
-  
-.content{
-  max-width: 960px;
-  height:550px;;
-  border: 50px solid #cccc;
-  margin: 0 auto;
+body {
+  background-color: white;
+}
+btn btn-outline-secondary
+.navbar-brand {
+  font-weight: lighter;
+}
+.nav-item{
+  font-family: 'Thasadith', sans-serif;
+  color:black;
 }
 
+.nav-link {
+  color:black;
+}
+.justify-content-end {
+margin: 0 auto;
+}
+
+#jumbotron  {
+  background: url('../images/banner2.jpg');
+  background-size: cover;
+  font-family: 'Thasadith', sans-serif;
+  margin:0 auto;
+  height: 400px;
+  }
+  .lead {
+    background: white;
+    opacity: .80;
+  }
+  .intro {
+    padding:20px;
+  }
+  .my-4{
+    padding: 20px;
+  }
+  aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-family: 'Thasadith', sans-serif;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+  .content{
+    max-width: 960px;
+    height:550px;;
+    border: 10px solid #cccc;
+    margin: 0 auto;
+  }
+
+.container-fluid {
+  height:50px;
+  background-color: white;
+  text-align:left;
+  font-family: 'Thasadith', sans-serif;
+   color:white,
+
+}
+
+.display-8{
+  text-align:center;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
 #timer{
   width: 40%;
   margin-left: auto;
