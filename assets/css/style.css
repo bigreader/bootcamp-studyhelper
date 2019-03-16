@@ -67,6 +67,15 @@ aside > p {
 
 }
 
+.row {
+
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.col{
+ padding: 20px;
+}
 .display-8{
   text-align:center;
 }
@@ -176,6 +185,7 @@ button:focus{
 	width: 20%;
 }
 #numbers span:nth-child(1){
+
   border: 2px solid #cccc;
   background: white;
 }
