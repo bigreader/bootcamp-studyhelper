@@ -32,7 +32,7 @@ $(document).ready(function() {
 		// save the time right now, so firebase lag doesn't matter
 
 		database.ref('studySessions').push({
-			date: stopwatch.startTime(),
+			date: parseInt(stopwatch.startTime()),
 			duration: time
 		});
 	});
@@ -44,7 +44,8 @@ $(document).ready(function() {
 
 		var item = $('<li>');
 		item.append($('<b>').text(formatTime(session.duration)));
-
+		item.append(' - ');
+		item.append($('<i>').text(moment(parseInt(session.date)).fromNow()));
 
 		$('#timeLog').prepend(item);
 	});
