@@ -140,9 +140,7 @@ button.call_to_action_button {
 	left: 50%;
 	color: #fff;
 	padding: 20px;
-	width: 0 auto;
-
-
+  width: 0 auto;
 	background:black;
 
 }
@@ -165,7 +163,7 @@ button:focus{
 	width: auto;
 }
 #numbers{
-	width: auto;
+  width: auto;
 }
 #numbers span{
   font-family: 'Thasadith', sans-serif;
@@ -174,12 +172,10 @@ button:focus{
 	font-size: 60px;
 	margin: 0 2.5%;
   color: #fff;
-  border-bottom-style: 4px dotted blue;
 	padding: 20px;
 	width: 20%;
 }
 #numbers span:nth-child(1){
-  border-bottom: 4px dotted blue;
   border: 2px solid #cccc;
   background: white;
 }
