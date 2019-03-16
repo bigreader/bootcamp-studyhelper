@@ -9,6 +9,10 @@ body {
   color:black;
 }
 
+.collapse .navbar-collapse{
+  position:center;
+}
+
 .nav-link {
   color:black;
 }
