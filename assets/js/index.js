@@ -3,13 +3,13 @@ $(document).ready(function() {
 	$('#start').on('click', function() {
 		stopwatch.reset();
 		stopwatch.interval(function() {
-			$('#timer').text(formatTime(stopwatch.time()));
+			$('#timer-display').text(formatTime(stopwatch.time()));
 		});
 	});
 
 	$('#reset').on('click', function() {
 		stopwatch.clearInterval();
-		$('#timer').text(formatTime(0));
+		$('#timer-display').text(formatTime(0));
 	});
 
 	$('#stop').on('click', function() {
@@ -25,16 +25,21 @@ $(document).ready(function() {
 
 
 
-	database.ref('studySessions').orderByChild('date').on('child_added', function(snap) {
+	database.ref('studySessions').orderByChild('date').limitToLast(5).on('child_added', function(snap) {
 		var session = snap.val();
 
 		var item = $('<li>');
 		item.text(session.date + ' - ');
 		item.append($('<b>').text(formatTime(session.duration)));
+		item.attr('id', 'session-' + session.date);
 
-		$('#timeLog').append(item);
+		$('#timeLog').prepend(item);
+	});
 
+	database.ref('studySessions').orderByChild('date').limitToLast(5).on('child_removed', function(snap) {
+		var session = snap.val();
 
+		$('#session-' + session.date).remove();
 	});
 
 });
