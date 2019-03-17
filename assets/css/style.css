@@ -1,33 +1,77 @@
+body{
+  background-image: url(../image/abc.jpg); 
+}
+
+
+
+.jumbotron { transition: all .4s ease-in-out; }
+.jumbotron:hover { transform: scale(1.1); }
 #jumbotron  {
+  margin-top:10px;
     max-height:40px;
     text-align: center;
-     width:960px;
     margin:0 auto;
     text-align: center;
-    line-height: 50px;
-   
   }
-  
+.navbar-brand:hover {
+  transition: transform .2s;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
+ 
 .content{
   max-width: 960px;
-  height:550px;;
-  border: 50px solid #cccc;
+  border: 0px solid #cccc;
   margin: 0 auto;
 }
-
 #timer{
-  width: 40%;
+  margin-top:30px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding: 30px;
+width:100px;
+  height:50px;
+  border-radius:40%;
+ 
+  
 }
 
+ #stop{
+   width: 80px;
+   height:40px;
+   display: block;
+   margin-right: auto;
+   border-radius:40%;
+}
+#start{
+  width: 80px;
+   height:40px;
+   display: block;
+   margin-left: auto;
+   border-radius:40%; 
+}
+#inspire{
+  margin-top:30px;
+  margin-bottom:30px;
+ }
+.inspire{
+  transition: transform .2s;
+}
+ 
+.inspire:hover {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
 
-#start, #stop, #reset{
-  margin-top: 10px;
-   width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+}
+ #todo{ border:20px solid #ccc;
+   height:450px;
+  
+}
+#done{
+  border:20px solid #ccc;
+   height:450px;
+ 
+  
 }
