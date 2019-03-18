@@ -22,11 +22,7 @@ font-family: 'Thasadith', sans-serif;
  color:white,
 
 }
-.left {
-  position:absolute;
-  left:0; top:92px; bottom: 0;
-  width: 178px;
-}
+
 .row {
 margin: 0 auto;
 text-align:center;
@@ -101,11 +97,13 @@ aside > h1 {
   float: center;
 }
 aside > ul {
+  text-align:center;
   color: darkslategrey;
   float: center;
 }
 
-#timelog {
+#TimeHeader {
+  text-align:center;
 
 
 }
@@ -118,18 +116,30 @@ aside > ul {
 
 
 #start {
+  margin-top: 120px;
+  padding: 20px;
 }
 
 #stop {
+  margin-top: 120px;
+  padding: 20px;
 
 
 
 }
 
 #reset {
+  margin-top: 120px;
+  padding: 20px;
  
 
 
+}
+.card-header{
+  text-align:center;
+}
+.blockquote {
+  text-align: center;
 }
 
 
