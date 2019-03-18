@@ -39,7 +39,7 @@
                       </li>
               </ul>
               <nav class="navbar navbar-light bg-light">
-                    <a class="btn btn-sm btn-outline-secondary" href="study.html" type="button">Study Spots</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="Googlemap.html" type="button">Study Spots</a>
                 </nav>
         </div>
       </nav>
@@ -60,6 +60,22 @@
             <h1 class="display-8">Report</h1>
             <br>
             <div class="content"> 
+                    <div id="graph-wrapper">
+                            <div class="graph-info">
+                                <a href="" class="visitors"></a>
+                                <a href="" class="returning"></a>
+                         
+                                <a href="#" id="bars"><span></span></a>
+                                <a href="#" id="lines" class="active"><span></span></a>
+                            </div>
+                         
+                            <div class="graph-container">
+                                <div id="graph-lines"></div>
+                                <div id="graph-bars"></div>
+                            </div>
+                        </div>
+                        <!-- end Graph HTML -->
+                        
      
                 </div>
               </div>
@@ -67,5 +83,8 @@
     <footer>
   <p>Copyright © 2019 </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.flot.min.js"></script>
+
 </body>
 </html>
