@@ -58,7 +58,7 @@ $(document).ready(function() {
 
 
 	$.ajax({
-		url: 'http://quotes.rest/qod.json?category=inspire',
+		url: 'http://quotes.rest/qod.json?category=students',
 		method: 'GET'
 	}).then(response => {
 		console.log(response);
