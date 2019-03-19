@@ -56,4 +56,18 @@ $(document).ready(function() {
 		$('#session-' + session.date).remove();
 	});
 
+
+	$.ajax({
+		url: 'http://quotes.rest/qod.json?category=inspire',
+		method: 'GET'
+	}).then(response => {
+		console.log(response);
+		var quote = response.contents.quotes[0]
+
+		$('#quote-body').text(quote.quote);
+		$('#quote-footer').text(quote.author);
+
+	});
+
+
 });
