@@ -2,20 +2,24 @@
 
 body {
   background-color: white;
-  overflow-wrap: break-word;
 
+}
+
+html {
+  min-height: 100%;
 }
 .content{
   max-width: 960px;
-  height:550px;
+  height:auto;
+  padding-bottom: 2.5rem;
   border: 5px solid #cccc;
-  overflow-wrap: break-word;
   margin: 0 auto;
 }
 
 .container-fluid {
-  overflow-wrap: break-word;
-height:50px;
+position:relative;
+height: auto;
+min-height:100vh;
 margin: 0 auto;
 background-color: white;
 font-family: 'Thasadith', sans-serif;
@@ -57,7 +61,37 @@ margin: 0 auto;
 }
 
 /* JUMBOTRON */
+#jumbotron-dates {
+  background: url('../images/clock.jpg');
+  background-size: cover;
+  font-family: 'Thasadith', sans-serif;
+  margin:0 auto;
+  height: 400px;
+}
+#jumbotron-sessions {
+  background: url('../images/whitedesk.jpg');
+  background-size: cover;
+  font-family: 'Thasadith', sans-serif;
+  margin:0 auto;
+  height: 400px;
 
+}
+#jumbotron-nutrition {
+  background: url('../images/nutrition.jpg');
+  background-size: cover;
+  font-family: 'Thasadith', sans-serif;
+  margin:0 auto;
+  height: 400px;
+
+}
+#jumbotron-reports{
+    background: url('../images/reports.jpg');
+    background-size: cover;
+    font-family: 'Thasadith', sans-serif;
+    margin:0 auto;
+    height: 400px;
+
+}
 #jumbotron  {
   background: url('../images/banner2.jpg');
   background-size: cover;
@@ -65,6 +99,7 @@ margin: 0 auto;
   margin:0 auto;
   height: 400px;
   }
+
   .lead {
     background: white;
     opacity: .80;
@@ -75,11 +110,20 @@ margin: 0 auto;
   .my-4{
     padding: 20px;
   }
-  aside {
-    width: 40%;
+  #intro-aside {
+    width: 50%;
     padding-left: .5rem;
     margin-left: .5rem;
-    float: right;
+    float:right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-family: 'Thasadith', sans-serif;
+    color: #29627e;
+
+  }
+  aside {
+    width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
     box-shadow: inset 5px 0 5px -5px #29627e;
     font-family: 'Thasadith', sans-serif;
     color: #29627e;
@@ -94,64 +138,72 @@ aside > h1 {
   color: black;
   margin-top: 20px;
   font-size: 2em;
-  float: center;
+  text-align:center;
 }
 aside > ul {
   text-align:center;
   color: darkslategrey;
-  float: center;
+ 
 }
 
+/* TIMER BUTTONS */ 
 #TimeHeader {
   text-align:center;
-
-
+  font-size: 18px;
 }
-/* TIMER BUTTONS */ 
-
-
-.button {
-
-}
-
 
 #start {
-  margin-top: 120px;
-  padding: 20px;
+  position: relative;
+  margin-top: 80px;
+  padding: 10px;
 }
 
 #stop {
-  margin-top: 120px;
-  padding: 20px;
-
-
-
+  position: relative;
+  margin-top: 80px;
+  padding: 10px;
 }
-
 #reset {
-  margin-top: 120px;
-  padding: 20px;
- 
-
-
+  position: relative;
+  margin-top: 80px;
+  padding: 10px;
 }
+.col-6 {  /*Time Log */
+  position: relative;
+  height: auto;
+  font-size: 12px;
+}
+
+
+/* Inspiration Quotes */
 .card-header{
   text-align:center;
 }
 .blockquote {
   text-align: center;
 }
-
-
+.blockquote-footer {
+  position: relative;
+  height: auto;
+}
 
 /* TIMER COUNTDOWN */ 
+
+#Exam-Info {
+  float: right;
+}
+#clockdiv{
+  margin-top: 20px;
+  text-align:Center;
+}
 
 .counter .title {
   color:black;
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   display: block;
+  letter-spacing: 2px;
   margin-bottom: 15px;
   font-family: 'Thasadith', sans-serif;
   font-weight: 500;
@@ -167,8 +219,8 @@ aside > ul {
   margin-right: 18px;
   text-indent: 0px;
   font-family: 'Thasadith', sans-serif;
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 20px;
+  font-size: 1rem;
   margin-bottom: 5px;
   width: 54px;
 }
@@ -176,22 +228,42 @@ aside > ul {
   clear: both;
   display: block;
   text-indent: -15px;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 10px;
+  font-size: 1rem;
   font-family: 'Thasadith', sans-serif;
 }
 .well {
 text-align: center;
-max-width: 400px;
+}
+
+.form-group{
+  text-align:center;
+  max-width: 500;
+}
+#formGroupExampleInput{
+  margin: 0 auto;
+  text-align:center;
+  max-width: 50%;
+
+}
+legend {
+  font-size: 16px;
+}
+
+.date {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align:center;
 }
 
 footer {
-  position: fixed;
+  position: absolute; 
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: white;
   color: black;
   text-align: center;
+  height: 2.5rem;
 }
 

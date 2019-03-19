@@ -40,13 +40,13 @@
               </ul>
               <nav class="navbar navbar-light bg-light" >
                   <form class="form-inline" action="Googlemap.html">
-                    <button class="btn btn-sm btn-outline-secondary"  >Study Spots</button>
+                    <button class="btn btn-sm btn-outline-secondary">Study Spots</button>
                   </form>
                 </nav>
-        </div>
+        
       </nav>
     <div class="jumbotron jumbotron-fluid" id="jumbotron">
-        <aside>
+        <aside id="intro-aside">
             <p class="lead">A helpful studying assistant that tracks your study time, 
                 remembers your next exam’s details, and provides resources and inspirational 
                 quotes to help you work.</p>
@@ -56,58 +56,50 @@
          <br>
          <br>
     </div>
-        <div class="container-fluid">
-          <br>
-          <br>
-            <h1 class="display-8">Timer</h1>
-            <br>
-            <div class="content"> 
-                <div class="card">
-                    <div class="card-header">
-                      Quote
-                    </div>
-                    <div class="card-body">
-                      <blockquote class="blockquote mb-0">
-                        <p id="quote-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <div id="quote-footer" class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></div>
-                      </blockquote>
-                    </div>
-                  </div>
-                  <div class="container">
-                      <div class="Session">
-                          <div class="col-sm">
-                              <aside>
-                                <h1 id ="TimeHeader">Time Log</h1>
-                                <br>
-                                  <ul id="timeLog">
-                                  </ul>
-                                </aside>
-                          </div>
-                          </div>
-                          <p id="timer-display" class="display-4 text-center">0:00</p>
-                      <div class="row align-items-end">
-                        <div class="col">
-                            <button type="button" class="btn btn-outline-secondary" id="start">Start</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-outline-secondary" id="reset">Reset</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-outline-secondary" id="stop">Stop</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-               
-            </div>
+    <div class="container-fluid">
+      <br>
+      <br>
+      <h1 class="display-8">Timer</h1>
+      <br>
+        <div class="content"> 
+            <div class="card">
+                <div class="card-header">
+                  Quote
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p id="quote-body">Inspirational Quote here</p>
+                    <div id="quote-footer" class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></div>
+                  </blockquote>
+                </div>
+              </div>
+        <div class="row">
+            <div class="col-sm-5 col-md-6">
+              <button type="button" class="btn btn-outline-secondary" id="start">Start</button>
+              <button type="button" class="btn btn-outline-secondary" id="reset">Reset</button>
+              <button type="button" class="btn btn-outline-secondary" id="stop">Stop</button>
+          </div>
+          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
 
-            </div>       
+              <aside>
+                  <h1 id ="TimeHeader">Time Log</h1>
+                  <br>
+                    <ul id="timeLog">
+                    </ul>
+                  </aside>
 
-    </div>
-    <footer>
-  <p>Copyright © 2019 </p>
-    </footer>
 
+
+
+
+          </div>
+        </div>
+      </div>
+        
+            <footer>
+                <p>Copyright © 2019 </p>
+                  </footer>
+      
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
