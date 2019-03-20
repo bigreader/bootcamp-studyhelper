@@ -1,6 +1,9 @@
 var sessionRunning = false;
 
 $(document).ready(function() {
+	
+
+	// SESSION TIMER
 
 	$('#start').on('click', function() {
 		//only start a session if we haven't started one already
@@ -38,6 +41,7 @@ $(document).ready(function() {
 	});
 
 
+	// RECENT SESSIONS
 
 	database.ref('studySessions').orderByChild('date').limitToLast(5).on('child_added', function(snap) {
 		var session = snap.val();
@@ -57,8 +61,10 @@ $(document).ready(function() {
 	});
 
 
+	// QUOTE API
+
 	$.ajax({
-		url: 'http://quotes.rest/qod.json?category=students',
+		url: 'https://cors-anywhere.herokuapp.com/http://quotes.rest/qod.json?category=students',
 		method: 'GET'
 	}).then(response => {
 		console.log(response);
