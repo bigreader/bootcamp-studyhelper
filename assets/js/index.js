@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 		stopwatch.reset();
 		stopwatch.interval(function() {
-			$('#timer-display').text(formatTime(stopwatch.time()));
+			$('#timer').text(formatTime(stopwatch.time()));
 		});
 	});
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 		stopwatch.clearInterval();
 
-		$('#timer-display').text(formatTime(0));
+		$('#timer').text(formatTime(0));
 	});
 
 	$('#stop').on('click', function() {
