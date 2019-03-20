@@ -4,10 +4,6 @@ body {
   background-color: white;
 
 }
-
-html {
-  min-height: 100%;
-}
 .content{
   max-width: 960px;
   height:auto;
@@ -23,7 +19,7 @@ min-height:100vh;
 margin: 0 auto;
 background-color: white;
 font-family: 'Thasadith', sans-serif;
- color:white,
+
 
 }
 
@@ -42,7 +38,6 @@ text-align:center;
 }
 
 /* NAVBAR */
-
 .navbar-brand {
   font-weight: lighter;
 }
@@ -97,7 +92,7 @@ margin: 0 auto;
   background-size: cover;
   font-family: 'Thasadith', sans-serif;
   margin:0 auto;
-  height: 400px;
+  height: 275px;
   }
 
   .lead {
@@ -151,12 +146,17 @@ aside > ul {
   text-align:center;
   font-size: 18px;
 }
+#timer {
+  margin-top: 20px;
+  font-size: 2rem;
+}
 
 #start {
   position: relative;
   margin-top: 80px;
   padding: 10px;
 }
+
 
 #stop {
   position: relative;
@@ -254,6 +254,11 @@ legend {
   margin-top: 20px;
   font-size: 14px;
   text-align:center;
+}
+
+#wrap {
+  height: auto;
+  width:auto;
 }
 
 footer {
