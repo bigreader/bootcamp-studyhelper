@@ -11,7 +11,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> 
 
 <style>
 /* Always set the map height explicitly to define the size of the div
@@ -19,7 +19,10 @@
  #map {
   height: 50%;
   width: 100%; 
+
 }
+
+
 /* Optional: Makes the sample page fill the window. */
 html, body {
   height: 100%;
@@ -41,6 +44,7 @@ html, body {
 <body>
     
         <!-- As a link -->
+       
         <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand" href="#">FocusMe</a>
                   <ul class="nav justify-content-end">
@@ -71,22 +75,27 @@ html, body {
                         </nav>
                 </div>
               </nav>
+              <div id="map"></div>
                 <div class="container-fluid">
                   <br>
                   <br>
                     <h1 class="display-8">Study Spots</h1>
+                 
                     <br>
                     <div class="content"> 
-                        <div id="map"></div>
+                       
                         <div id="wrap">
                         <div id="right-panel">
                           <h2>Nearby Study Areas</h2>
                           <ul id="places"></ul>
                           <button id="more">More results</button>
+                        
                         </div>
                       </div>
                         </div>
+                     
                         </div>
+                       
                       </div>
       
     
@@ -169,7 +178,7 @@ function createMarkers(places) {
 // the below code appends the list of nearby study areas
     var li = document.createElement('li');
     li.textContent = place.name;
-    placesList.appendChild(li);
+   placesList.appendChild(li);
 
     bounds.extend(place.geometry.location);
   }
