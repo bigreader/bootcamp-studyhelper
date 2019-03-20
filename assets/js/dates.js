@@ -1,9 +1,5 @@
 $(document).ready(function() {
-// STILL WORKING ON THIS IT'S NOT SETUP TO FIREBASE YET
-//	database.ref('exam').on('value', function(snap) {
-//		exam = snap.val();
-//		moment(exam.date);
-//	});
+
 	
 	//get the year from the html
 	var getYear = document.getElementById("year_start");
@@ -46,7 +42,7 @@ function callme (year,month,date) {
 	var combine = year + "" + month + "" + date; 
 	// shows the value the user is inputing from the html file console.log(combine);
 	
-	var differenceindays = moment().diff(moment(combine), 'days'); 
+	var differenceindays = moment().diff(moment(combine, 'YYYYMMMMDD'), 'days'); 
 	var daysleft = Math.abs(differenceindays);  //WARNING need to change this part because the function still calcutes the time even when 'go back in time' to the past
     $('.days').html(daysleft);
 
@@ -66,14 +62,38 @@ function callme (year,month,date) {
 	//console.log(daysleft + " days " + hoursleft + " hours " + minutesleft + " minutes " + secondsleft  + ' seconds until the exam');
 
 
+	database.ref("/Exam").set({
+		Countdown: {
+		Days: daysleft, 
+		Hours: hoursleft, 
+		Minutes: minutesleft, 
+		Seconds: secondsleft
+		}
+		}); 
 
 
 	}
 
 	// the counddown function calls callme function and 
 	function countdown () {
-   	var p = setInterval(function() { callme(theYear(),theMonth(), theDay())}, 1000);
-	 }
-	
+		var p = setInterval(function() { callme(theYear(),theMonth(), theDay())}, 1000);
+	  }
+
+	  
+//getting the values from  firebase and displaying onto HTML
+ function firebasevalue () {
+ database.ref("/Exam").orderByChild("Countdown").on("child_added", function(snapshot) {
+ //console.log(snapshot.val().Days);
+ //console.log(snapshot.val().Hours);
+ //console.log(snapshot.val().Minutes);
+ //console.log(snapshot.val().Seconds);
+ 
+ $('#whateverId').text(snapshot.val().Days + " days " +  snapshot.val().Hours + " hours " + snapshot.val().Minutes +  " minutes " +  snapshot.val().Seconds  + " seconds remain until the exam!");
+ });  
+ }
+ setInterval(firebasevalue, 50);
+	 
+
+
 
 });
