@@ -42,7 +42,7 @@ function callme (year,month,date) {
 	var combine = year + "" + month + "" + date; 
 	// shows the value the user is inputing from the html file console.log(combine);
 	
-	var differenceindays = moment().diff(moment(combine), 'days'); 
+	var differenceindays = moment().diff(moment(combine, 'YYYYMMMMDD'), 'days'); 
 	var daysleft = Math.abs(differenceindays);  //WARNING need to change this part because the function still calcutes the time even when 'go back in time' to the past
     $('.days').html(daysleft);
 
