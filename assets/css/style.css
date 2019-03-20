@@ -1,8 +1,7 @@
 body{
-  background-image: url(../image/abc.jpg); 
+  background-image: url(../image/dce.jpg); 
+ 
 }
-
-
 
 .jumbotron { transition: all .4s ease-in-out; }
 .jumbotron:hover { transform: scale(1.1); }
@@ -64,14 +63,4 @@ width:100px;
   -webkit-transform: scale(1.1); 
   transform: scale(1.1);
 
-}
- #todo{ border:20px solid #ccc;
-   height:450px;
-  
-}
-#done{
-  border:20px solid #ccc;
-   height:450px;
- 
-  
 }
