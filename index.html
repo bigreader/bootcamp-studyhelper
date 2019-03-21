@@ -26,7 +26,6 @@
     -khtml-opacity: 0.7;
     opacity: 0.7;
     z-index: 100;
-    display: none;
     }
     .cnt223 a{
     text-decoration: none;
@@ -85,23 +84,27 @@
     }
     </style>
     <script type='text/javascript'>
-    $(function(){
-    var overlay = $('<div id="overlay"></div>');
-    overlay.show();
-    overlay.appendTo(document.body);
-    $('.popup').show();
-    $('.close').click(function(){
-    $('.popup').hide();
-    overlay.appendTo(document.body).remove();
-    return false;
-    });
-    
-    $('.x').click(function(){
-    $('.popup').hide();
-    overlay.appendTo(document.body).remove();
-    return false;
-    });
-    });
+      $(function(){
+        if (localStorage.getItem('returningUser') === 'true') {
+          return;
+        }
+        var overlay = $('<div id="overlay"></div>');
+        overlay.appendTo(document.body);
+        $('.popup').show();
+        $('.close').click(function(){
+          $('.popup').hide();
+          overlay.remove();
+          localStorage.setItem('returningUser', 'true');
+          return false;
+        });
+
+        $('.x').click(function(){
+          $('.popup').hide();
+          overlay.remove();
+          localStorage.setItem('returningUser', 'true');
+          return false;
+        });
+      });
     </script>
     <div class='popup'>
     <div class='cnt223'>
