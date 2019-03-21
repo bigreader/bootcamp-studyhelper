@@ -32,7 +32,7 @@ $(document).ready(function() {
     };
 
 
-$("#month_start, #day_start, #year_start").change(countdown);  //IMPORTANT--when the user changes  the date the countdown function will be called!
+$("#year_start").change(countdown);  //When the user clicks on the year the countwdown function is called
 
 
  
@@ -87,10 +87,13 @@ function callme (year,month,date) {
  //console.log(snapshot.val().Hours);
  //console.log(snapshot.val().Minutes);
  //console.log(snapshot.val().Seconds);
+
  
- $('#whateverId').text(snapshot.val().Days + " days " +  snapshot.val().Hours + " hours " + snapshot.val().Minutes +  " minutes " +  snapshot.val().Seconds  + " seconds remain until the exam!");
- });  
- }
+ // $('#whateverId').text(snapshot.val().Days + " days " +  snapshot.val().Hours + " hours " + snapshot.val().Minutes +  " minutes " +  snapshot.val().Seconds  + " seconds remain until the exam!");
+ 
+});  
+
+}
  setInterval(firebasevalue, 50);
 	 
 
