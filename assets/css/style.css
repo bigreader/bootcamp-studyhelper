@@ -20,9 +20,14 @@ margin: 0 auto;
 background-color: white;
 font-family: 'Thasadith', sans-serif;
 
-
 }
 
+h2 {
+  padding-top:10px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
 .row {
 margin: 0 auto;
 text-align:center;
@@ -56,43 +61,30 @@ margin: 0 auto;
 }
 
 /* JUMBOTRON */
+
 #jumbotron-dates {
-  background: url('../images/clock.jpg');
+  background: url('../images/whitecard.jpg');
   background-size: cover;
+  background-repeat:no-repeat;
   font-family: 'Thasadith', sans-serif;
   margin:0 auto;
-  height: 400px;
+  height:350px;
 }
+
 #jumbotron-sessions {
   background: url('../images/whitedesk.jpg');
   background-size: cover;
   font-family: 'Thasadith', sans-serif;
   margin:0 auto;
-  height: 400px;
-
+  height: 350px;
 }
-#jumbotron-nutrition {
-  background: url('../images/nutrition.jpg');
-  background-size: cover;
-  font-family: 'Thasadith', sans-serif;
-  margin:0 auto;
-  height: 400px;
 
-}
-#jumbotron-reports{
-    background: url('../images/reports.jpg');
-    background-size: cover;
-    font-family: 'Thasadith', sans-serif;
-    margin:0 auto;
-    height: 400px;
-
-}
 #jumbotron  {
   background: url('../images/banner2.jpg');
   background-size: cover;
   font-family: 'Thasadith', sans-serif;
   margin:0 auto;
-  height: 275px;
+  height: 350px;
   }
 
   .lead {
@@ -156,7 +148,6 @@ aside > ul {
   margin-top: 80px;
   padding: 10px;
 }
-
 
 #stop {
   position: relative;
