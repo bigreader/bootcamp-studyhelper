@@ -4,6 +4,10 @@ body {
   background-color: white;
 
 }
+
+
+
+
 .content{
   max-width: 960px;
   height:auto;
@@ -23,10 +27,14 @@ font-family: 'Thasadith', sans-serif;
 }
 
 h2 {
+  text-align:center;
   padding-top:10px;
   padding-left: 20px;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+}
+h3{
+  font-size: 16px;
 }
 .row {
 margin: 0 auto;

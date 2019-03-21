@@ -73,7 +73,10 @@ $(document).ready(function() {
 		$('#quote-body').text(quote.quote);
 		$('#quote-footer').text(quote.author);
 
+
 	});
 
+
+	
 
 });
